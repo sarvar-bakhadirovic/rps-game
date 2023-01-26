@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/app.js" defer></script>
+
+    <!-- title -->
+    <link rel="shortcut icon" href="https://assets.materialup.com/uploads/d8f5d75a-77ed-4a4a-946d-9ba26517a67e/preview.jpg" type="image/x-icon">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <h1 class="header__title">
+                    ROCK <br>
+                    PAPER <br>
+                    SCISSORS
+                </h1>
+
+                <div class="header__score">
+                    <p class="header__scoreText">Score</p>
+                    <span class="header__scoreNumber" id="score" value="0">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="start">
+            <div class="container">
+                <div class="start__bg"></div>
+                <button class="start__btn start__rock">
+                    <img src="./assets/images/icon-rock.svg" alt="rock icon" class="start__img rock-icon" data-type="rock">
+                </button>
+                <button class="start__btn start__paper">
+                    <img src="./assets/images/icon-paper.svg" alt="paper icon" class="start__img paper-icon" data-type="paper">
+                </button>
+                <button class="start__btn start__scissors">
+                    <img src="./assets/images/icon-scissors.svg" alt="paper icon" class="start__img scissors-icon" data-type="scissors">
+                </button>
+            </div>
+        </div>
+        <div class="finish">
+            <div class="finish__gamer">
+                <h1 class="finish__gamer_title">You Picked</h1>
+
+                <div class="finish__gamer_result" id="participant">
+
+                </div>
+            </div>
+
+            <div class="finish__table">
+                <h1 class="finish__table_title" id="table_title">You Win!</h1>
+                <button class="finish__table_btn" id="retry">Play again</button>
+            </div>
+
+            <div class="finish__computer">
+                <h1 class="finish__computer_title">Computer Picked</h1>
+
+                <div class="finish__computer_result" id="computer">
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal">
+        <div class="container">
+            <div class="modal__content">
+                <div class="modal__header">
+                    <h1 class="modal__title">RULES</h1>
+                    
+                    <button class="modal__close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                
+                <img class="modal__image" src="./assets/images/modal-image.jpg" alt="Modal Image">
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="rules">
+            <button class="rules__button" id="rules">RULES</button>
+        </div>
+    </footer>
+</body>
+</html>
