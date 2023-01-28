@@ -9,14 +9,15 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
-        padding: 30px;
+        width: 70%;
+        padding: 10px;
+        margin: 0 auto;
         border: 5px solid var(--header-outline);
         border-radius: 20px;
     }
 
     &__title{
-        font-size: 46px;
+        font-size: 20px;
         color: #fff;
     }
 
@@ -25,8 +26,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 200px;
-        height: 170px;
+        width: 100px;
+        height: 80px;
         border-radius: 20px;
         padding: 10px;
         background-color: #fff;
@@ -34,13 +35,13 @@
     }
 
     &__scoreText{
-        font-size: 36px;
+        font-size: 16px;
         font-weight: 700;
         color: var(--score-text);
     }
 
     &__scoreNumber{
-        font-size: 64px;
+        font-size: 30px;
         font-weight: 600;
         color: var(--dark-text);
     }
